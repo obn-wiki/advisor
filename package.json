@@ -1,0 +1,19 @@
+{
+  "name": "@obn/advisor",
+  "version": "0.1.0",
+  "description": "OBN Advisor — keeps your OpenClaw agent updated with vetted patterns, audits skills, and proposes community learnings",
+  "type": "module",
+  "main": "src/index.ts",
+  "keywords": ["openclaw", "skill", "obn", "security", "patterns", "advisor"],
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/obn-wiki/advisor"
+  },
+  "openclaw": {
+    "skill": true,
+    "commands": ["@obn"],
+    "permissions": ["network:obn.wiki", "network:api.github.com", "fs:read"],
+    "description": "Checks for pattern updates, audits installed skills, proposes learnings back to OBN"
+  }
+}
